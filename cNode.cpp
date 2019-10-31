@@ -1,7 +1,7 @@
 //self referential node class i.e. stack elements
 #include <iostream>
 using namespace std;
-
+//definition of Node Class
 class Node
 {
 		int n;						//keep track of no. of nodes added

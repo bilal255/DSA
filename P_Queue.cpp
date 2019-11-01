@@ -5,7 +5,7 @@
 #include "cQueue.cpp"
 using namespace std;
 
-class p_que : public que
+class p_que : public Que
 {
 public:
 	p_que(){}				//default constructor
@@ -15,7 +15,7 @@ public:
 	{
 		if(!top){ Que :: add(ptr); return *this;} //to add first element in que irrespective of priority
 		else if(tail->priority >= ptr->priority)  //to add element at the end of queue
-		{
+		{ 
 			Que :: add(ptr); return *this;  
 		}
 		else if(top->priority < ptr->priority)    //to add element at start of the queue

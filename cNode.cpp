@@ -4,9 +4,10 @@ using namespace std;
 //definition of Node Class
 class Node
 {
-		int n;						//keep track of no. of nodes added
+								//keep track of no. of nodes added
 		int data;					//data carrier
 	public:
+		int n;
 		Node *next;
 		Node *priority;					//pointer to refer the next node
 	Node(){ this->priority = 0; this->n = 0;this->data = -1; next = NULL;} //default class constructor

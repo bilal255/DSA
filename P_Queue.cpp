@@ -7,6 +7,7 @@ using namespace std;
 
 class p_que : public Que
 {
+	
 public:
 	p_que(){}				//default constructor
 	p_que(Node *& ref){}	//parameterized constructor
@@ -33,7 +34,7 @@ public:
 				ptr->next = rptr;
 				bptr->next = ptr;
 				ptr = NULL;
-				++count;
+				++n;
 			}
 			return *this;
 		}

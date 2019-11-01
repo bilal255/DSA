@@ -7,8 +7,9 @@ class Node
 		int n;						//keep track of no. of nodes added
 		int data;					//data carrier
 	public:
-		Node *next;					//pointer to refer the next node
-	Node(){ this->n = 0;this->data = -1; next = NULL;} //default class constructor
+		Node *next;
+		Node *priority;					//pointer to refer the next node
+	Node(){ this->priority = 0; this->n = 0;this->data = -1; next = NULL;} //default class constructor
 	
 	Node(int d, int num){ this->data = d; this->n = num;}			//parameterized constructor
 	

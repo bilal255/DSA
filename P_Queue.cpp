@@ -4,7 +4,7 @@
 #include <iostream>
 #include "cQueue.cpp"
 using namespace std;
-
+//definition of Priority Queue
 class p_que : public Que
 {
 	

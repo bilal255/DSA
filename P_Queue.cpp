@@ -39,12 +39,13 @@ public:
 			return *this;
 		}
 	}	
-	p_que (const p_que &src) : Que((Que) src){}    //Copy constructor
+	p_que (const p_que &src) : Que((Que&) src){}    //Copy constructor same as Queue class
 	
 	p_que & operator = (const p_que &robj)		   //Assignment operator
 	{
 		if(this == &robj){ return * this;}
-		((*Que) this)->operator = ((Que&) robj);
+		((Que) *this)->operator = ((Que&) robj);
 		return *this;
 	}
 };
+#pragma once

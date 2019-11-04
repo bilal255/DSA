@@ -93,7 +93,11 @@ public:
 		count++;
 		return *this;
 	}
-	
+	//Insert at given index
+	l_list & insertAt(int index, cNode *& ptr)
+	{
+		
+	}
 	//File Handling
 	l_list(ifstream& iFile) : head(NULL), count(0)
 	{

@@ -84,6 +84,16 @@ public:
 		--count;
 		return ptr;
 	}
+	//Insert Nodes
+	l_list & insert (cNode *& ptr)
+	{
+		ptr->next = head;
+		head = ptr;
+		ptr = NULL;
+		count++;
+		return *this;
+	}
+	
 	//File Handling
 	l_list(ifstream& iFile) : head(NULL), count(0)
 	{
